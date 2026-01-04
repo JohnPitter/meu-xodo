@@ -31,6 +31,11 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Sistema de design inspirado na Apple
 - Variáveis CSS para temas
 - ESLint para qualidade de código
+- GitHub Actions CI/CD com workflows separados:
+  - **Build**: Build e testes em Node 18.x e 20.x
+  - **Security**: Scan de vulnerabilidades (npm audit, CodeQL, TruffleHog, Semgrep, license check)
+  - **Deploy**: Deploy automático no Firebase Hosting com preview em PRs
+- Secrets do GitHub para configurações Firebase seguras
 
 ### Estrutura
 - Componentes React modulares
