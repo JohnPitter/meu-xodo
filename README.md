@@ -1,5 +1,9 @@
 # Meu Xodó 🚗
 
+![Build](https://github.com/JohnPitter/meu-xodo/workflows/Build/badge.svg)
+![Security](https://github.com/JohnPitter/meu-xodo/workflows/Security%20Scan/badge.svg)
+![Deploy](https://github.com/JohnPitter/meu-xodo/workflows/Deploy%20to%20Firebase/badge.svg)
+
 **Meu Xodó** é um aplicativo de diário de atividades automotivas que ajuda você a gerenciar a manutenção do seu veículo, lavagens, lembretes e datas importantes.
 
 ## ✨ Funcionalidades
