@@ -34,7 +34,7 @@
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/meu-xodo.git
+git clone https://github.com/JohnPitter/meu-xodo.git
 cd meu-xodo
 
 # Instale as dependências
