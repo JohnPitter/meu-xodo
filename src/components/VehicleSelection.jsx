@@ -31,7 +31,6 @@ export default function VehicleSelection({ onComplete }) {
   const [step, setStep] = useState(1);
   const [marca, setMarca] = useState('');
   const [modelo, setModelo] = useState('');
-  const [ano, setAno] = useState('');
   const [modeloCustom, setModeloCustom] = useState('');
 
   const handleMarcaSelect = (selectedMarca) => {
@@ -46,7 +45,6 @@ export default function VehicleSelection({ onComplete }) {
   };
 
   const handleAnoSelect = (selectedAno) => {
-    setAno(selectedAno);
     const finalModelo = modelo === 'Outro' ? modeloCustom : modelo;
     onComplete({ marca, modelo: finalModelo, ano: selectedAno });
   };

@@ -17,14 +17,12 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [currentActivityType, setCurrentActivityType] = useState(null);
   const [sessionId, setSessionId] = useState(null);
-  const [userId, setUserId] = useState(null);
 
   useEffect(() => {
-    // Check for existing session
+    // Initialize state from localStorage and session on mount
     const session = getCurrentSession();
     if (session) {
       setSessionId(session.sessionId);
-      setUserId(session.userId);
       setHasStartedJourney(true);
     }
 
@@ -56,9 +54,8 @@ function App() {
 
   const handleStartJourney = async () => {
     try {
-      const { sessionId: newSessionId, userId: newUserId } = await createUserSession();
+      const { sessionId: newSessionId } = await createUserSession();
       setSessionId(newSessionId);
-      setUserId(newUserId);
       setHasStartedJourney(true);
     } catch (error) {
       console.error('Failed to start journey:', error);
