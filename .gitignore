@@ -93,3 +93,7 @@ out
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Claude
+CLAUDE.md
+.claude/
